@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juicing 4 life</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/foundation.css"/>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('.pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+		 	});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 515 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+<body>
+
+
+	<div class="header clearfix">
+	</div>
+
+	<a name="Home"></a> 
+	<nav class="clearfix">
+		<a href="#" class="pull">Menu</a>
+		<ul class="clearfix">
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#Facts">Facts</a></li>
+			<li><a href="#Recipes">Recipes</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+		
+	</nav>
+	
+
+<!--SCROLLER-->	
+	<div class="row">
+	<ul class="example-orbit" data-orbit>
+	  <li>
+	    <a href="#Facts"><img src="img/JuicingImage.jpg" alt="slide 1" />
+	    <div class="orbit-caption"></a>
+	      Welcome to Juice 4 Life!
+	    </div>
+	  </li>
+	  <li>
+	    <a href="#Recipes"><img src="img/GreenJuice.jpg" alt="slide 2" />
+	    <div class="orbit-caption"></a>
+	      Find out the benefits of Green Juice!
+	    </div>
+	  </li>
+	  <li>
+	    <a href="#Recipes"><img src="img/beatjuice.jpg" alt="slide 3" />
+	    <div class="orbit-caption"></a>
+	      Did you know beat juice can help your kidney's?
+	    </div>
+	  </li>
+	</ul> 
+	</div>
+	<!--<div class="small-12 columns">
+		<img data-interchange="[img/JuicingHeader.jpg, (small)], [img/JuicingHeader1.jpg, (medium)], [img/JuicingHeader.jpg, (large)]" alt=""/>-->
+
+<a name="Facts"></a> 
+	<div class="row panel clearfix"> 
+			<div class="medium-6 medium-float-left large-float-left">
+			<div class="flex-video">
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/k17xcp0nG8g" frameborder="0" allowfullscreen></iframe>
+			</div>
+			</div> <p>Juicing offers many life-enhancing health benefits including a faster, more efficient way to absorb immune boosting nutrients naturally found in fruits and vegetables.  It provides a way to access digestive enzymes typically locked away in the fiber matrix of whole fruits and vegetables.  Most commercial juices are processed and lacking in nutrition while freshly juiced fruits and vegetables are loaded with an abundance of vitamins, minerals and phytonutrients.</p>
+
+		<p>Drinking fresh juice can help us adopt healthier eating patterns.  For those of us who do not traditionally consume many fruits and vegetables, incorporating fresh juice can be a fun and different approach to increasing consumption of these important plant foods for improved health and wellness and reaching your weight loss goals.</p>
+
+		<p>How does it work? Juicing removes the insoluble fiber from vegetables and fruits. While fiber is an established, important part of an overall healthy diet, removing the insoluble fiber allows for increased absorption of specific health promoting phytonutrients including enzymes, while the soluble fiber persists into the juice.  By removing the fibers and consuming fruits and vegetables in liquid form, we are providing a nutrient delivery system to our bodies that allows individuals who would otherwise have difficulty consuming whole vegetables, the opportunity to reap the numerous benefits vegetables have to offer.</p>
+	</div>
+
+<!--FACTS-->
+	<div class="row clearfix" data-equalizer>
+		<div class="medium-4 columns panel2" data-equalizer-watch><p> There are three main reasons why you will want to consider vegetable juicing: 
+			<ol>
+			<li>Juicing allows you to absorb all the nutrients from vegetables</li> 
+			<li>It also allows you to consume an optimal amount of vegetables in an efficient manner</li>
+			<li>You can add a variety of vegetables to your diet.</li>
+			<ol></p>
+		</div>
+		<div class="medium-4 columns panel2" data-equalizer-watch><p> Virtually every health authority recommends getting 6-8 servings of vegetables and fruits per day, which very few people actually get.</p>
+		</div>
+		<div class="medium-4 columns panel2" data-equalizer-watch><p> Juicing is an easy way to virtually guarantee that you will reach your daily target for vegetables.
+		</p>
+		</div>
+	</div>
+
+
+
+
+
+<!--BlockGrid-->
+<a name="Recipes"></a> 
+	<div  class="row panel">
+		<h1>Recipes</h1>
+		<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+			<li><em>Green Juice</em><a href="#" data-reveal-id="myModal1" data-reveal><img class="th" src="img/GreenJuice.jpg" alt=""/></a></li>
+			<li><em>Carrot Juice</em><a href="#" data-reveal-id="myModal2" data-reveal><img class="th" src="img/CarrotJuice.jpg" alt=""/></a></li>
+			<li><em>Orange Juice</em><a href="#" data-reveal-id="myModal3" data-reveal><img class="th" src="img/OrangeJuice.jpg" alt=""/></a></li>
+			<li><em>Beat Juice</em><a href="#" data-reveal-id="myModal4" data-reveal><img class="th" src="img/BeatJuice.jpg" alt=""/></a></li>
+			<li>Berry Juice<img class="th"src="img/BerryJuice.jpg" alt=""/></li>
+			<li>Apple Juice<img class="th"src="img/AppleJuice.jpg" alt=""/></li>
+			<li>Cherry Juice<img class="th"src="img/CherryJuice.jpg" alt=""/></li>
+			<li>Super Berry Juice<img class="th"src="img/SuperBerryJuice.jpg" alt=""/></li>
+		</ul>
+
+				<div id="myModal1" class="reveal-modal" data-reveal="true">
+				  <h2><strong>Green Juice</strong></h2>
+				  <p class="lead">Ingredients</p>
+				  	<ul>
+				  		<li>Apples - 2 medium (3" dia) 364g</li>
+				  		<li>Celery - 2 stalk, medium (7-1/2" - 8" long) 80g</li>
+				  		<li>Cucumber - 1 cucumber (8-1/4") 301g</li>
+				  		<li>Kale - 5 leaf (8-12") 175g</li>
+				  		<li>Lemon - 1/2 fruit (2-3/8" dia) 42g</li>
+				  		<li>Oranges (peeled) - 2 fruit (2-5/8" dia) 262g</li>
+				  		<li>Parsley - 1 handful 40g</li>
+				  		<BR><BR>
+				  <p>Process all ingredients in a juicer, shake or stir and serve.</p>
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
+
+			  	<div id="myModal2" class="reveal-modal" data-reveal="true">
+				  <h2><strong>Carrot Juice</strong></h2>
+				  <p class="lead">Ingredients</p>
+				  	<ul>
+				  		<li>Apples - 2 medium (3" dia) 364g</li>
+				  		<li>Celery - 2 stalk, medium (7-1/2" - 8" long) 80g</li>
+				  		<li>Cucumber - 1 cucumber (8-1/4") 301g</li>
+				  		<li>Kale - 5 leaf (8-12") 175g</li>
+				  		<li>Lemon - 1/2 fruit (2-3/8" dia) 42g</li>
+				  		<li>Oranges (peeled) - 2 fruit (2-5/8" dia) 262g</li>
+				  		<li>Parsley - 1 handful 40g</li>
+				  		<BR><BR>
+				  <p>Process all ingredients in a juicer, shake or stir and serve.</p>
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
+
+
+			  	<div id="myModal3" class="reveal-modal" data-reveal="true">
+				  <h2><strong>Orange Juice</strong></h2>
+				  <p class="lead">Ingredients</p>
+				  	<ul>
+				  		<li>Apples - 2 medium (3" dia) 364g</li>
+				  		<li>Celery - 2 stalk, medium (7-1/2" - 8" long) 80g</li>
+				  		<li>Cucumber - 1 cucumber (8-1/4") 301g</li>
+				  		<li>Kale - 5 leaf (8-12") 175g</li>
+				  		<li>Lemon - 1/2 fruit (2-3/8" dia) 42g</li>
+				  		<li>Oranges (peeled) - 2 fruit (2-5/8" dia) 262g</li>
+				  		<li>Parsley - 1 handful 40g</li>
+				  		<BR><BR>
+				  <p>Process all ingredients in a juicer, shake or stir and serve.</p>
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
+
+				<div id="myModal4" class="reveal-modal" data-reveal="true">
+				  <h2><strong>Beat Juice</strong></h2>
+				  <p class="lead">Ingredients</p>
+				  	<ul>
+				  		<li>Apples - 2 medium (3" dia) 364g</li>
+				  		<li>Celery - 2 stalk, medium (7-1/2" - 8" long) 80g</li>
+				  		<li>Cucumber - 1 cucumber (8-1/4") 301g</li>
+				  		<li>Kale - 5 leaf (8-12") 175g</li>
+				  		<li>Lemon - 1/2 fruit (2-3/8" dia) 42g</li>
+				  		<li>Oranges (peeled) - 2 fruit (2-5/8" dia) 262g</li>
+				  		<li>Parsley - 1 handful 40g</li>
+				  		<BR><BR>
+				  <p>Process all ingredients in a juicer, shake or stir and serve.</p>
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
+		</div>
+
+
+
+
+<a name="Contact"></a> 
+<Div class="row clearfix" data-equalizer>
+		<div class="panel2" data-equalizer-watch>
+					<center>
+                        <h1>Contact</h1>
+                        <p>Leave a message below and I will get back with you.</p>
+
+                            <form action="MAILTO:tafoya9099@gmail.com" method="post" enctype="text/plain">
+                                    <br>
+                                <input type="text" name="name" placeholder="Your full name" size="10">
+                                    <br><br>
+                                <input type="text" name="mail" placeholder="Your email" size="10">
+                                    <br><br>
+                                <input type="text" name="comment" placeholder="Message" size="50">
+                                    <br><br>
+                                <input type="submit" value="Send">
+                                <input type="reset" value="Reset">
+                            </form>
+                    </center>
+		
+				<footer>
+					<div class=”footer row panel2”>
+			    	 <center>
+                            <a href="http://www.twitter.com">Twitter</a>
+                            <a href="http://www.facebook.com/justintafoya">Facebook</a><BR><BR>
+                            <p>Copyright &copy; 2014 Justin Tafoya</p>
+                        </center>
+					</div>
+				</footer>
+
+
+		</div>	
+
+
+</div>
+
+
+
+
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/foundation/foundation.interchange.js"></script>
+<script src="js/foundation/foundation.magellan.js"></script>
+<script src="js/vendor/snap.svg.js"></script>
+<script src="js/jquery.pizza.js"></script>
+<script>
+	$(document).foundation();
+</script>
+
+</body>
+</html>
